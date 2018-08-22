@@ -1,0 +1,12 @@
+node_modules
+build
+npm-debug.log
+
+*.OUT/
+OUT/
+
+*.tgz
+.env
+.DS_Store
+.*
+!.gitignore
