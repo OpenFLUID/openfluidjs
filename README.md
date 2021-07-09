@@ -38,7 +38,7 @@ Run the following commands from the root of the sources tree.
 
 ### Build
 
-Thi command will install dependencies and build the module
+This command will install dependencies and build the module
 ```
 npm install
 ```
@@ -52,7 +52,7 @@ npm test
 ```
 
 
-### Packaging
+### Packaging
 
 This command will create a .tgz archive
 ```

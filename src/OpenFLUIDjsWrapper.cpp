@@ -256,7 +256,8 @@ void OpenFLUIDjs_RunSimulation(const Napi::CallbackInfo& info)
 // =====================================================================
 
 
-Napi::Object Init(Napi::Env env, Napi::Object exports) {
+Napi::Object Init(Napi::Env env, Napi::Object exports) 
+{
 
   openfluid::utils::Binding::init();
 
@@ -272,7 +273,6 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
   exports.Set(Napi::String::New(env, "runSimulation"),Napi::Function::New(env,OpenFLUIDjs_RunSimulation));
 
   return exports;
-
 }
 
 
