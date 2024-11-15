@@ -146,7 +146,6 @@ Napi::External<openfluid::utils::Binding> OpenFLUIDjs_OpenDataset(const Napi::Ca
   }
 
   std::string Path = info[0].As<Napi::String>();
-
   openfluid::utils::Binding* Ptr = openfluid::utils::Binding::openDataset(Path.c_str());
 
   if (Ptr)
@@ -179,7 +178,6 @@ Napi::External<openfluid::utils::Binding> OpenFLUIDjs_OpenProject(const Napi::Ca
   }
 
   std::string Path = info[0].As<Napi::String>();
-
   openfluid::utils::Binding* Ptr = openfluid::utils::Binding::openProject(Path.c_str());
 
   if (Ptr)
@@ -224,6 +222,7 @@ void OpenFLUIDjs_SetCurrentOutputDir(const Napi::CallbackInfo& info)
   }
 
   std::string Path = info[0].As<Napi::String>();
+  std::cout << "JS SET OUT?" << std::endl;
   openfluid::utils::Binding::setCurrentOutputDir(Path.c_str());
 }
 

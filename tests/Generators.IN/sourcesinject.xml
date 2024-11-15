@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<openfluid>
+<openfluid  format="fluidx 4">
   <datasources>
     <filesource ID="1" file="source3.dat" />    
     <filesource ID="2" file="source4.dat" />    
