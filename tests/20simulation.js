@@ -26,8 +26,8 @@ describe("Simulation", function() {
   it("project", function() {
     pathPRJ = path.join(__dirname,"Generators.PRJ")
     pathOUT = path.join(__dirname,"Generators.PRJ","OUT")
-    blob = OpenFLUID.openProject(pathPRJ)
     OpenFLUID.setCurrentOutputDir(pathOUT)
+    blob = OpenFLUID.openProject(pathPRJ) // FIXME: fails if setCurrentOutputDir done after openProject because of env data reset
     OpenFLUID.runSimulation(blob)
     OpenFLUID.deleteBlob(blob)
   });
