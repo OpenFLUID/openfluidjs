@@ -1,0 +1,8 @@
+{
+  "name": "Generators",
+  "description": "Test project for PyOpenFLUID.",
+  "authors": "Jean-Christophe Fabre",
+  "created_at": "2018-07-26 16:48:00",
+  "updated_at": "2024-11-19 16:48:00",
+  "inc_outdir": false
+}
