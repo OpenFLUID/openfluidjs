@@ -6,7 +6,7 @@ PROJECT(OpenFLUIDjs)
 
 FIND_PACKAGE(OpenFLUID REQUIRED)
 
-OPENFLUID_DETECT_CXX14()
+OPENFLUID_DETECT_CXXSTD()
 
 FIND_PACKAGE(OpenFLUID $ENV{npm_package_version} EXACT REQUIRED core base ware machine tools fluidx)
 
